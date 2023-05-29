@@ -1,0 +1,45 @@
+{
+  "name": "clasp-gyas-template",
+  "version": "1.0.0",
+  "description": "claspを使用してgas開発するテンプレートリポジトリ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run eslint && npm run prettier && jest",
+    "build": "rollup -c",
+    "eslint": "eslint --fix \"./**/*.ts\"",
+    "prettier": "prettier --write \"./**/*.ts\"",
+    "prepare": "husky install"
+  },
+  "repository": "git+https://github.com/himihiromu/clasp-gyas-template.git",
+  "author": "himihiromu <himihiromu@icloud.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himihiromu/clasp-gyas-template/issues"
+  },
+  "homepage": "https://github.com/himihiromu/clasp-gyas-template#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@types/google-apps-script": "^1.0.64",
+    "@types/jest": "^29.5.1",
+    "@types/node": "12",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "jsonc-parser": "^3.2.0",
+    "prettier": "^2.8.8",
+    "rollup": "^3.23.0",
+    "rollup-plugin-gas": "^1.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "*"
+  }
+}
