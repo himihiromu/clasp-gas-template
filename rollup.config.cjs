@@ -12,13 +12,18 @@ module.exports = (env) => {
       format: 'es',
     },
     plugins: [
-      nodeResolve({ jsnext: true }), // node_modulesにあるのもくっつけてくれる
+      typescript({
+        noEmitOnError: true,
+        tsconfig: './tsconfig.json',
+      }),
       babel({
         exclude: 'node_modules/**',
         babelHelpers: 'bundled'
       }),
+      nodeResolve({
+        jsnext: true
+      }),
       gas(),
-      typescript(),
     ],
   }
 }
